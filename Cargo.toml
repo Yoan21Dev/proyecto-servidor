@@ -1,0 +1,15 @@
+[package]
+name = "proyecto-servidor"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+diesel = { version = "2.0.0", features = ["postgres"] }
+dotenv = "0.15.0"
+serde = { version = "1.0", features = ["derive"] }
+actix-web = "4.0"
+tokio = { version = "1.0", features = ["full"] }
+rocket = "0.5"
+[dependencies.diesel_migrations]
+version = "2.0.0"
+
